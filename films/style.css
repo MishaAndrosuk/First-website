@@ -1,0 +1,140 @@
+
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: #004660;
+    border: 2px solid black;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+max-width: 1440px;
+margin: 5px auto;
+background-color: #F2F2EF;
+}
+
+.form-item {
+    margin-bottom: 20px; 
+}
+
+label {
+    margin-right: 80px; 
+}
+
+select {
+    width: 170px;
+}
+
+button {
+    width: 75%;
+    cursor: pointer;
+}
+
+#film {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.film-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.film-item img {
+    width: 200px;
+    height: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+}
+
+
+
+.header {
+    position: unset;
+    width: 1440px;
+    height: 130px;
+    background-image: url("hop.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 142px;
+    background-color: #004660;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navlist li:hover{
+    color: black;
+}
+
+.navlist li {
+    margin-left: 20px;
+}
+
+.navinput {
+    background-image: url("lupa.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #276f98;
+    width: 225px;
+    height: 41px;
+    border: #004660;
+    border-radius: 12px;
+    
+}
+
+.navinput::placeholder {
+    color: white;
+}
+
+button.nav-button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color: black;
+}   
+
+.button button {
+    background-color: #f18a56;
+    width: 100%;
+    cursor: pointer;
+}
+
+button.nav-button:hover {
+    background-color: #ef6621;
+}

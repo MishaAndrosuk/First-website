@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="header">
+            <div class="navbar">
+                <ul class="navlist">
+                    <li><img src="img/logo.svg" alt=""></li>
+                    <p>ГРОМАДСЬКА ОРГАНІЗАЦІЯ<br>«АНТИТЕРОРИСТИЧНИЙ ЦЕНТР»</p>
+                    <li  style="cursor: pointer" onclick="news()"><a href="#"></a>Новини</li>
+                    <li style="border-bottom: 2px solid black; cursor: pointer;"><a href="#"></a>Фільми</li>
+                    <li style="cursor: pointer"><a href="#"></a>Галерея</li>
+                    <li style="cursor: pointer"><a href="#"></a>Контакти</li>
+                    <li><input placeholder="Пошук" class="navinput"></li>
+                    <li><button class="nav-button" style="cursor: pointer;" onclick="login()">Увійти</button></li>
+                    <li><button class="nav-button" style="cursor: pointer;" onclick="register()">Зареєструватися</button></li>
+                </ul>
+            </div>
+        </div>
+        <h2>Search:</h2>
+        <div class="container">
+            <div class="form-item">
+                <label for="title">Title: </label>
+                <input id="title" type="text">
+            </div>
+            <div class="form-item">
+                <label for="type">Type: </label>
+                <select id="type">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+            <button id="search" onclick="searchFilmHandler()">Search</button>
+        </div>
+        <div id="film"></div>
+        <div class="pagination">
+            <button id="prev" onclick="prevPage()" disabled>Previous</button>
+            <button id="next" onclick="nextPage()" disabled>Next</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
