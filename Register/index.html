@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form class="formReg" onsubmit="regSubmitHandler(event)">
+        <div class="form-row">
+            <div class="form-col" style="text-align: end;">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-col">
+                <input placeholder="Enter email" id="email" name="email" type="email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col" style="text-align: end;">
+                <label for="password">Password</label>
+            </div>
+            <div class="form-col">
+                <input placeholder="Enter password" id="password" name="password" type="password" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col" style="text-align: end;">
+                <label for="repeat-password">Repeat</label>
+            </div>
+            <div class="form-col">
+                <input placeholder="Repeat password" id="repeat-password" name="password" type="password" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <input value="Зареєструватися" type="submit">
+            </div>
+        </div>
+        <div class="form-row inline">
+            <label for="">Уже зареєстровані</label>
+            <span onclick="redirectToLoginPage()">увійти</span>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
